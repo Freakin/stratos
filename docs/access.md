@@ -32,7 +32,7 @@ $ docker network create --driver=bridge dev-bridge
 
 1. Bring up the single container Console
 ```
-$ docker run -p 4443:443 --net=dev-bridge splatform/stratos --name console
+$ docker run -p 4443:443 --net=dev-bridge --name=console splatform/stratos 
 ```
 
 2. Bring up the UAA
@@ -48,6 +48,6 @@ Admin Account: `admin`
 Password: `hscadmin`
 
 4. Click enter and select the following from the list:
-`stratos.admon`
+`stratos.admin`
 
 5. The Console is now ready to be used
